@@ -7,7 +7,7 @@ class MyCircularDeque {
     public MyCircularDeque(int k) {
         this.size = 0;
         /**
-         两个指针，一前一后，front存放下一次队头插入的位置，rear存放队尾元素的位置
+         两个指针，一前一后，front存放第1个有效数据的前一个位置，rear存放最后一个有效元素的位置
          指针后移的时候，下标 +1，要对数组的长度取模；
          指针前移的时候，为了循环到数组的末尾，需要先加上数组的长度，然后再对数组长度取模。
          */
